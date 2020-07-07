@@ -162,7 +162,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(Green_LED2_GPIO_Port, Green_LED2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(External_LED_on_D5_GPIO_Port, External_LED_on_D5_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(External_LED_on_D5_GPIO_Port, External_LED_on_D5_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : Green_LED2_Pin */
   GPIO_InitStruct.Pin = Green_LED2_Pin;

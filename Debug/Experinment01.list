@@ -279,8 +279,8 @@ static void MX_GPIO_Init(void)
  80002d2:	f000 fc05 	bl	8000ae0 <HAL_GPIO_WritePin>
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(External_LED_on_D5_GPIO_Port, External_LED_on_D5_Pin, GPIO_PIN_RESET);
- 80002d6:	2200      	movs	r2, #0
+  HAL_GPIO_WritePin(External_LED_on_D5_GPIO_Port, External_LED_on_D5_Pin, GPIO_PIN_SET);
+ 80002d6:	2201      	movs	r2, #1
  80002d8:	2110      	movs	r1, #16
  80002da:	4813      	ldr	r0, [pc, #76]	; (8000328 <MX_GPIO_Init+0xa4>)
  80002dc:	f000 fc00 	bl	8000ae0 <HAL_GPIO_WritePin>
